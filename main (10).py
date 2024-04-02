@@ -1,38 +1,19 @@
-# Задание 1 
-a = int(input("введите 1 число: "))
-b = int(input("введите 2 число: "))
-if a > b: 
-    print("a максимальное число")
-    print("b минимальное число")
-elif a == b:
-    print("Эти числа равны")
-else: 
-    print("b максимальное число")
-    print("a минимальное число")
-# Задание 2 
-a = int(input("введите сторону квадрата: "))
-r = int(input("введите радиус: "))
-if a > r: 
-    print("Впишется")
-else: 
-    print("Не впишется")
-# Задание 3
-x = int(input("Введите х: "))
-vic1 = x**2
-vic2 = 1 / x**2
-print("Ответ 1:", vic1, "ответ 2:", vic2)
-# Задание 4
-a = int(input("Введите сторону квадрата: "))
-r = int(input("Введите радиус окружности: "))
-d = (2*a**2)**0.5
-if d <= 2*r:
-    print("Впишется")
-else:
-    print("Не впишется")
-# Задание 5
-a = int(input("введите 1 число: "))
-b = int(input("введите 2 число: "))
-if a > b: 
-    print("a большое число")
-else: 
-    print("b большое число")
+#Задача 1 
+def schet(): 
+    a = input ("Введите 1 число: ")
+    a = float (a)
+    b = input ("Введите 2 число: ")
+    b = float (b)
+    c = input ("Введите 3 число: ")
+    c = float (c)
+    if a > b > c: 
+        print (a - b - c)
+    elif b > a > c: 
+        print (b - a - c)
+    else: 
+        print (c - a - b)
+    return a, b, c
+    
+c, d, r = schet()
+e, f, b = schet()
+z, x, m= schet()
