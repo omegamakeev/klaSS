@@ -1,30 +1,33 @@
-#Задание 35-40 в прошлой р
-# Задание 43
-import random 
-def skibidi():
-    stolbi = 5
-    stroki = 3
-    B = []
-    nulevoy_spisok = []
-    Ne_nulevoy_spisok = []
-    for stolb in range(stolbi):
-        nulevoy_el = 0
-        Ne_nulevoy_el = 0
-        matrix_numb = []
-        for stroka in range(stroki):
-            matrix_numb.append(random.randint(-5, 5))
-            B.append(matrix_numb)
-        for i in matrix_numb:
-            if i == 0:
-                nulevoy_el += 1 
-                continue
-            elif i != 0:
-                Ne_nulevoy_el += 1
-        nulevoy_spisok.append(nulevoy_el)
-        Ne_nulevoy_spisok.append(Ne_nulevoy_el)
-    for vivod in B:
-        print(vivod)
-    print('\n', 'Количество нулевых элементов', nulevoy_spisok)
-    print('\n', 'Количество ненулевых элементов', Ne_nulevoy_spisok)
-    return stolbi, stroki, B 
-s, x, c = skibidi()
+#Задание 1 
+tourist_info = {
+    "Фамилия": "Andriesh",
+    "Страна": "Moldova",
+    "Год": 2021,
+    "Стоимость": 115000.00
+}
+print("\nИнфа")
+for key, value in tourist_info.items():
+    print(f"{key}: {value}")
+    
+tourist_info["Фамилия"] = input("\nВведите Фамилию: ")
+tourist_info["Страна"] = input("Введите Страну: ")
+tourist_info["Год"] = input("Введите год: ")
+tourist_info["Стоимость"] = input("Введите стоимость: ")
+print("\nИнфа")
+for key, value in tourist_info.items():
+    print(f"{key}: {value}")
+    
+#Задание 2 
+A = float(input("Введите A: ")) #Ввод A
+B = float(input("Введите B: ")) #Ввод B 
+C = float(input("Введите C: ")) #Ввод C 
+result = A * (B / 3.14) + (C * 3 + 5) #Решаем пример с наишими числами 
+print(f"Ответ: {result}") #Выводим ответ на экран 
+ 
+#Задание 3 
+R, Y = map(float, input("Введите значение R и Y: ").split()) #Ввод Y И R на одной строке 
+result1 = R ** Y + (Y / 2) #Решаем пример 
+print(f"Ответ: {result1}") #Выводим ответ 
+
+
+
